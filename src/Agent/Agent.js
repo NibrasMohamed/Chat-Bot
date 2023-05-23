@@ -1,51 +1,56 @@
 
-import storage from "../Data/Starter.json";
-import model from "../Data/Policies.json";
+import storage from "../Data/Data.json";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import React from 'react';
 import { Typography } from "@mui/material";
-import { setVehicle, resetVehicle, setChatMode} from "../Store/agentReducer";
+import { setVehicle, resetVehicle, setChatMode, addQueCount, resetQueCount } from "../Store/agentReducer";
 
 
 
 const Agent = (prop) => {
     const selected_vehicle = useSelector((state) => state.agent.selected_vehicle)
+    const vehicleList = useSelector((state) => state.agent.vehicles)
     const current_chat_mode = useSelector((state) => state.agent.current_chat_mode)
+    const que_count = useSelector((state) => state.agent.que_count)
     const [answer, setAnswer] = useState("...");
+    const question = storage.questions;
+    const [data, setData] = useState(storage);
     const dispatch = useDispatch();
-    
 
-    const starter = storage.prompts;
-    const small_talks = storage.small_talks;
-    const policies = model.policies;
-    const car = model.car;
 
     function getResponse(prompt, selected_vehicle, chat_mode = "general") {
-
+        let probelities = 0;
+        let response = { answer: "please check your question" }
         console.log('[selected_vehicle=' + selected_vehicle + ']', '[chat mode = ' + chat_mode + ']');
-        let data = [];
-        switch (chat_mode) {
-            case "small":
-                data = small_talks
-                break;
+
+        switch (current_chat_mode) {
             case "general":
-                data = starter;
+                response = findAnswer(prompt, data.answer)
                 break;
             case "question":
-                data = car;
+                response.answer = askQuestion();
                 break
+            case "answer":
+                response = findAnswer(prompt, data.answer)
+                break;
             default:
-                data = policies;
+                for (const key in data) {
+                    const answer = findAnswer(prompt, data[key])
+                    if (answer.probabilty > probelities) {
+                        response = answer
+                        probelities = answer.probabilty
+                    }
+
+                }
                 break;
         }
-        const response = findAnswer(prompt, data);
+
 
         return response;
     };
 
     const findAnswer = (prompt, data) => {
-        console.log('[data]', prompt);
         let words = prompt.split(" ");
 
         const filteredAnswers = data.filter((value, index) => {
@@ -72,6 +77,31 @@ const Agent = (prop) => {
         return finalAnswer;
     }
 
+    const askQuestion =  () => {
+        let que = {};
+        if (selected_vehicle == "not selected") {
+            dispatch(resetQueCount);
+            que.question = question[que_count];
+            que.extra = vehicleList.map((vehicle, index)=> buttons(vehicle, index));
+        } else {
+            que.question = question[que_count]
+        }
+        dispatch(addQueCount())
+        return que;
+    }
+
+    const handleVehicleSelect = (e,type) =>{
+        console.log('[type]', type, e);
+        dispatch(setVehicle(type))
+        prop.handleExtraClicks(e);
+    }
+
+    const buttons = (type, key) => {
+        return(
+            <button key={key} value={type} className="col" style={{margin: "7px"}} onClick={(e)=>handleVehicleSelect(e,type)}>{type}</button>
+        )
+    }
+
     useEffect(() => {
         const response = getResponse(prop.prompt, selected_vehicle, current_chat_mode);
         setAnswer(response.answer);
@@ -81,8 +111,13 @@ const Agent = (prop) => {
     }, [prompt])
 
     return (
+        current_chat_mode === "question"?
+        <div className="row" style={{textAlign: "left"}}>
+            {answer.question}{answer.extra?answer.extra:""}
+        </div>:
         <div>
             <Typography
+                key={prop.key}
                 variant="body1"
                 style={{ marginBottom: '10px', fontWeight: 'bold' }}
                 align={'left'}

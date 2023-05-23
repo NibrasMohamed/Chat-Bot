@@ -1,0 +1,246 @@
+{
+    "answer": [
+        {
+            "question": "What types of insurance do you offer?",
+            "answer": "We offer car insurance, motorcycle insurance, and commercial vehicle insurance."
+        },
+        {
+            "question": "How can I file an insurance claim?",
+            "answer": "To file a claim, you can visit our website and submit a claim form, or you can contact our claims department directly."
+        },
+        {
+            "question": "What factors affect my insurance premium?",
+            "answer": "Several factors can affect your insurance premium, including your driving record, the type of vehicle you own, your age, and your location."
+        },
+        {
+            "question": "Do you offer discounts for safe drivers?",
+            "answer": "Yes, we offer discounts for safe drivers with a clean driving record. Contact our sales team to learn more."
+        },
+        {
+            "question": "How can I get a quote for insurance coverage?",
+            "answer": "You can get a quote by filling out our online quote form on our website or by contacting our sales team."
+        },
+        {
+            "question": "What is the minimum coverage required by law?",
+            "answer": "The minimum coverage requirements vary by state. Please consult your local regulations or contact our customer service for more information."
+        },
+        {
+            "question": "Can I add additional drivers to my policy?",
+            "answer": "Yes, you can add additional drivers to your policy. Please contact our customer service to update your policy information."
+        },
+        {
+            "question": "How can I update my contact information?",
+            "answer": "You can update your contact information by logging into your online account or by contacting our customer service."
+        },
+        {
+            "question": "What should I do if I have an accident?",
+            "answer": "If you have an accident, ensure your safety and the safety of others involved. Then, contact our claims department as soon as possible to report the incident."
+        },
+        {
+            "question": "How can I make a payment for my policy?",
+            "answer": "You can make a payment for your policy online through our website or by contacting our billing department."
+        },
+        {
+            "question": "Hello",
+            "answer": "Hi! How Can I Help You?"
+        },
+        {
+            "question": "Whats Your Name?",
+            "answer": "I Am KiKi."
+        },
+        {
+            "question": "What Are You?",
+            "answer": "I Am A Personal Assitance For On The Spot Insurance Company"
+        },
+        {
+            "question": "What Can You Do? How Can You Help Me?",
+            "answer": "I can assist you to claim the insurance for your vehicle"
+        },
+        {
+            "question": "Hi",
+            "answer": "Hello! What can I do for you?"
+        },
+        {
+            "question": "How Much Money I Can Claim",
+            "answer": "It Depends on the insuarance policy"
+        },
+        {
+            "question": "What types of insurance policies are available?",
+            "answer": "There are various types of insurance policies available auto insurance"
+        },
+        {
+            "question": "How do I choose the right insurance policy for me?",
+            "answer": "Choosing the right insurance policy depends on factors like your specific needs, budget, and risk profile. It's recommended to compare different policies, coverage options, and premiums before making a decision."
+        },
+        {
+            "question": "What does 'premium' mean in an insurance policy?",
+            "answer": "The premium is the amount you pay to the insurance company for the coverage provided by the policy."
+        },
+        {
+            "question": "What is the deductible in an insurance policy?",
+            "answer": "The deductible is the amount you are responsible for paying out of pocket before the insurance coverage kicks in. It helps determine the cost-sharing between you and the insurance company."
+        },
+        {
+            "question": "i need ask some question about insurance",
+            "answer": "Feel Free to ask any question related to On The Spot Insurance"
+        },
+        {
+            "question": "What factors affect the cost of insurance premiums?",
+            "answer": "Several factors can affect the cost of insurance premiums, including your age, health condition, driving record (for auto insurance), the value of insured assets (for property insurance), and the coverage limits you choose."
+        },
+        {
+            "question": "How often should I review and update my insurance policy?",
+            "answer": "It's recommended to review your insurance policy annually or whenever there are significant life changes, such as getting married, having children, buying a new home, or changing jobs. Regular reviews ensure your coverage stays aligned with your current needs."
+        },
+        {
+            "question": "What is the difference between term life insurance and whole life insurance?",
+            "answer": "Term life insurance provides coverage for a specified term, such as 10, 20, or 30 years, while whole life insurance offers lifelong coverage with a cash value component. Term life insurance generally has lower premiums, while whole life insurance offers lifelong protection and potential cash value accumulation."
+        },
+        {
+            "question": "What happens if I miss a premium payment?",
+            "answer": "Missing a premium payment may result in a lapse or cancellation of your insurance policy. It's important to pay your premiums on time to maintain continuous coverage. Some policies may have a grace period or other provisions to address missed payments."
+        },
+        {
+            "question": "Can I make changes to my insurance policy after purchasing it?",
+            "answer": "In many cases, you can make changes to your insurance policy after purchasing it. This may include adjusting coverage levels, adding or removing beneficiaries, or updating personal information. Contact your insurance provider to discuss any desired changes."
+        }
+    ],
+    "small_talks": [
+        {
+            "question": "How are you?",
+            "answer": "I'm doing well, thank you!"
+        },
+        {
+            "question": "What's your favorite color?",
+            "answer": "I'm an AI, so I don't have preferences like humans do, but I like all colors!"
+        },
+        {
+            "question": "What's the weather like today?",
+            "answer": "I'm sorry, but as an AI, I don't have access to real-time weather information."
+        },
+        {
+            "question": "What do you do for fun?",
+            "answer": "As an AI, I enjoy helping and providing information to users like you!"
+        },
+        {
+            "question": "Do you have any siblings?",
+            "answer": "I'm an AI, so I don't have a family in the traditional sense, but I'm part of a network of AI models!"
+        },
+        {
+            "question": "Tell me a joke!",
+            "answer": "Sure, here's one: Why don't scientists trust atoms? Because they make up everything!"
+        },
+        {
+            "question": "What's your favorite food?",
+            "answer": "As an AI, I don't eat, so I don't have a favorite food. But I can help you find recipes if you'd like!"
+        },
+        {
+            "question": "What's the meaning of life?",
+            "answer": "The meaning of life can be a profound philosophical question. Different people have different perspectives on it."
+        },
+        {
+            "question": "What's your favorite movie?",
+            "answer": "As an AI, I don't have personal preferences or watch movies, but I can recommend popular movies if you're interested!"
+        },
+        {
+            "question": "How long have you been an AI?",
+            "answer": "I am a state-of-the-art AI language model based on GPT-3.5 architecture, which was released in June 2021."
+        }
+    ],
+    "car": [
+        {
+            "question": "What is car insurance?",
+            "answer": "Car insurance is a policy that provides financial protection against damage, theft, and accidents involving your car."
+        },
+        {
+            "question": "What are the types of car insurance coverage?",
+            "answer": "Common types of car insurance coverage include liability coverage, collision coverage, comprehensive coverage, uninsured/underinsured motorist coverage, and medical payments coverage."
+        },
+        {
+            "question": "How is car insurance premium calculated?",
+            "answer": "Car insurance premium is calculated based on various factors, including the driver's age, driving history, location, type of car, coverage options, and deductible amount."
+        },
+        {
+            "question": "What is liability coverage in car insurance?",
+            "answer": "Liability coverage in car insurance protects you financially if you are at fault in an accident and cause damage to someone else's property or injure another person."
+        },
+        {
+            "question": "What is collision coverage in car insurance?",
+            "answer": "Collision coverage in car insurance pays for the repairs or replacement of your car in case of a collision with another vehicle or object, regardless of fault."
+        },
+        {
+            "question": "What is comprehensive coverage in car insurance?",
+            "answer": "Comprehensive coverage in car insurance provides protection against damage to your car from non-collision events, such as theft, vandalism, fire, or natural disasters."
+        },
+        {
+            "question": "Do I need car insurance if I don't own a car?",
+            "answer": "If you frequently drive a car, even if you don't own it, you may need non-owner car insurance to protect yourself and meet legal requirements. Check with insurance providers for details."
+        },
+        {
+            "question": "What is uninsured/underinsured motorist coverage?",
+            "answer": "Uninsured/underinsured motorist coverage in car insurance protects you if you are involved in an accident with a driver who doesn't have insurance or has insufficient coverage."
+        },
+        {
+            "question": "What is a deductible in car insurance?",
+            "answer": "A deductible in car insurance is the amount you must pay out of pocket before your insurance coverage kicks in to cover the remaining expenses."
+        },
+        {
+            "question": "Can I customize my car insurance policy?",
+            "answer": "Yes, you can often customize your car insurance policy by choosing different coverage options, adjusting coverage limits, and adding optional endorsements to suit your needs."
+        }
+    ],
+    "bike": [
+        {
+            "question": "What should I do immediately after a bike accident?",
+            "answer": "After a bike accident, ensure your safety and the safety of others involved. Move to a safe location, if possible, and call emergency services if needed."
+        },
+        {
+            "question": "Should I document the details of the bike accident?",
+            "answer": "Yes, it's important to document the details of the accident. Take photos of the scene, gather witness information, and note down any relevant information such as the time, date, and location of the accident."
+        },
+        {
+            "question": "How can I report a bike accident to my insurance company?",
+            "answer": "You can report a bike accident to your insurance company by contacting their claims department. They will guide you through the process and help you file a claim."
+        },
+        {
+            "question": "What information should I exchange with the other party involved in the bike accident?",
+            "answer": "Exchange contact information, including names, phone numbers, and insurance details, with the other party involved in the bike accident. If there are witnesses, try to gather their contact information as well."
+        },
+        {
+            "question": "Is it necessary to file a police report for a bike accident?",
+            "answer": "It's recommended to file a police report for a bike accident, especially if there are injuries or significant property damage. The police report can provide an official record of the incident."
+        },
+        {
+            "question": "How long do I have to file an insurance claim after a bike accident?",
+            "answer": "The time limit to file an insurance claim after a bike accident may vary. It's best to contact your insurance company as soon as possible to understand the specific time frame and requirements."
+        },
+        {
+            "question": "What if the other party doesn't have insurance in a bike accident?",
+            "answer": "If the other party involved in the bike accident doesn't have insurance, your own insurance coverage, such as uninsured/underinsured motorist coverage, may help cover the damages. Contact your insurance company to discuss your options."
+        },
+        {
+            "question": "Can I get compensation for my injuries in a bike accident?",
+            "answer": "If you've been injured in a bike accident due to someone else's negligence, you may be eligible for compensation. Consult with a personal injury attorney to understand your rights and explore your legal options."
+        },
+        {
+            "question": "How long does it take to settle a bike accident insurance claim?",
+            "answer": "The time it takes to settle a bike accident insurance claim can vary depending on various factors, such as the complexity of the case and the cooperation of all parties involved. Your insurance company can provide an estimate based on your specific circumstances."
+        },
+        {
+            "question": "Should I hire an attorney for a bike accident insurance claim?",
+            "answer": "Hiring an attorney for a bike accident insurance claim can be beneficial, especially if you've suffered injuries or there are disputes with the insurance company. An attorney can provide guidance, negotiate on your behalf, and protect your rights."
+        }
+    ],
+    "questions": [
+        "What is your vehicle type?",
+        "Do you own a vehicle that needs insurance?",
+        "Have you ever been involved in an accident?",
+        "Do you have any previous insurance claims?",
+        "What is the make and model of your vehicle?",
+        "What is your driving history like?",
+        "Are you the primary driver of the vehicle?",
+        "What is your desired coverage limit?",
+        "Are there any specific features or add-ons you'd like to include in your policy?",
+        "Have you received any traffic violations or tickets recently?"
+    ]
+}

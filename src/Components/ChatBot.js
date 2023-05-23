@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Paper, Typography } from '@mui/material';
-import data from '../Data/Starter.json';
 import Agent from "../Agent/Agent"
 import { connect, useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
-import { setVehicle, resetVehicle } from '../Store/agentReducer';
 
 const ChatBot = (myState) => {
   const [messages, setMessages] = useState([]);
-  const [userMessage, setUserMessage] = useState();
-  const selected_vehicle = useSelector((state) => state.agent.selected_vehicle)
-  const current_chat_mode = useSelector((state) => state.agent.current_chat_mode)
-  const dispatch = useDispatch();
   
   const handleBotMessage = (event, prompts) => {
     console.log('[prompts]', prompts);
-    setMessages((prevMessages) => [...prevMessages, { content: <Agent prompt={prompts}/>, sender: 'bot' }]);
-    dispatch(setVehicle("bike"));
+    setMessages((prevMessages, index) => [...prevMessages, { content: <Agent key={index} prompt={prompts} handleExtraClicks={(e)=>handleExtraClicks(e)}/>, sender: 'bot' }]);
   };
 
+  const handleExtraClicks = (event) => {
+    const message = "You have selected " + event.target.value
+    setMessages((prevMessages) => [...prevMessages, { content: message, sender: 'user' }]);
+    setTimeout(() => {
+      handleBotMessage(event, "");
+    }, 1000);
+  }
   const handleUserMessage = (event) => {
     event.preventDefault();
     const userMessage = event.target.elements.prompt.value;
