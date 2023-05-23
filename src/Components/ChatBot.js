@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import { TextField, Button, Container, Paper, Typography } from '@mui/material';
 import data from '../Data/Starter.json';
 import {agent} from "../Agent/Agent"
+import { connect, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { setVehicle, resetVehicle } from '../Store/agentReducer';
 
-const ChatBot = () => {
+const ChatBot = (myState) => {
   const [messages, setMessages] = useState([]);
-  const prompts = data.prompts;
-
+  const selected_vehicle = useSelector((state) => state.agent.selected_vehicle)
+  const current_chat_mode = useSelector((state) => state.agent.current_chat_mode)
+  const dispatch = useDispatch();
+  const agentReducer = useSelector((state)=>state.agentReducer)
   const handleBotMessage = (event, prompts) => {
-    const response = agent(prompts);
+    const response = agent(prompts, selected_vehicle, current_chat_mode);
     const botMessage = response.answer;
     setMessages((prevMessages) => [...prevMessages, { content: botMessage, sender: 'bot' }]);
-    
+    dispatch(setVehicle("bike"));
   };
 
   const handleUserMessage = (event) => {
@@ -27,7 +32,7 @@ const ChatBot = () => {
     // Clear the input field
     event.target.elements.prompt.value = '';
   };
-
+  console.log('[selected vehicle]', selected_vehicle);
   return (
     <Container maxWidth="sm">
       <h1>Chat Bot</h1>
@@ -63,4 +68,7 @@ const ChatBot = () => {
   );
 };
 
-export default ChatBot;
+const mapStateToProps = (state) => ({
+  myState: state.agent  
+})
+export default connect(mapStateToProps)(ChatBot);

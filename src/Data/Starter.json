@@ -60,8 +60,6 @@
             "question": "Hi",
             "answer": "Hello! What can I do for you?"
         },
-
-        
         {
             "question": "What should I do immediately after a bike accident?",
             "answer": "After a bike accident, ensure your safety and the safety of others involved. Move to a safe location, if possible, and call emergency services if needed."
@@ -106,6 +104,47 @@
             "question": "How Much Money I Can Claim",
             "answer": "It Depends on the insuarance policy"
         }
-
+    ],
+    "small_talks": [
+        {
+            "question": "How are you?",
+            "answer": "I'm doing well, thank you!"
+        },
+        {
+            "question": "What's your favorite color?",
+            "answer": "I'm an AI, so I don't have preferences like humans do, but I like all colors!"
+        },
+        {
+            "question": "What's the weather like today?",
+            "answer": "I'm sorry, but as an AI, I don't have access to real-time weather information."
+        },
+        {
+            "question": "What do you do for fun?",
+            "answer": "As an AI, I enjoy helping and providing information to users like you!"
+        },
+        {
+            "question": "Do you have any siblings?",
+            "answer": "I'm an AI, so I don't have a family in the traditional sense, but I'm part of a network of AI models!"
+        },
+        {
+            "question": "Tell me a joke!",
+            "answer": "Sure, here's one: Why don't scientists trust atoms? Because they make up everything!"
+        },
+        {
+            "question": "What's your favorite food?",
+            "answer": "As an AI, I don't eat, so I don't have a favorite food. But I can help you find recipes if you'd like!"
+        },
+        {
+            "question": "What's the meaning of life?",
+            "answer": "The meaning of life can be a profound philosophical question. Different people have different perspectives on it."
+        },
+        {
+            "question": "What's your favorite movie?",
+            "answer": "As an AI, I don't have personal preferences or watch movies, but I can recommend popular movies if you're interested!"
+        },
+        {
+            "question": "How long have you been an AI?",
+            "answer": "I am a state-of-the-art AI language model based on GPT-3.5 architecture, which was released in June 2021."
+        }
     ]
 }
