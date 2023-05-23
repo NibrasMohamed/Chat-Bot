@@ -16,9 +16,12 @@ const agentSlice = createSlice({
       },
       resetVehicle: (state, action) => {
         state.selected_vehicle = "";
+      },
+      setChatMode:(state, action) => { 
+        state.current_chat_mode = action.payload
       }
   },
 });
 
-export const { setVehicle, resetVehicle } = agentSlice.actions;
+export const { setVehicle, resetVehicle, setChatMode } = agentSlice.actions;
 export default agentSlice.reducer;

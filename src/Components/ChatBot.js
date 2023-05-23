@@ -12,7 +12,6 @@ const ChatBot = (myState) => {
   const selected_vehicle = useSelector((state) => state.agent.selected_vehicle)
   const current_chat_mode = useSelector((state) => state.agent.current_chat_mode)
   const dispatch = useDispatch();
-  const agentReducer = useSelector((state)=>state.agentReducer)
   
   const handleBotMessage = (event, prompts) => {
     console.log('[prompts]', prompts);
