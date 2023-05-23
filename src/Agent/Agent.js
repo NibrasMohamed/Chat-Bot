@@ -65,10 +65,10 @@ const findAnswer = (prompt, data) => {
 }
 
 const Agent = (prop) => {
-    const [answer, setAnswer] = useState();
+    const [answer, setAnswer] = useState("...");
     useEffect(() => {
         const response = getResponse(prop.prompt);
-        setAnswer(response);
+        setAnswer(response.answer);
       return () => {
         // second
       }
@@ -82,7 +82,7 @@ const Agent = (prop) => {
               style={{ marginBottom: '10px', fontWeight: 'bold' }}
               align={'left'}
             >
-              {answer.answer}
+              {answer}
             </Typography>
         </div>
     );
